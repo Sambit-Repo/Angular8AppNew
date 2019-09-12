@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -18,4 +18,37 @@
   </li>
 </ul>
 
-<router-outlet></router-outlet>
+-->
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div style="text-align: center">
+    <h1>
+        {{ title }}!
+    </h1>
+<form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
+  
+  <b>Enter Your UserName: </b>
+    <input style="text-align: center" type="text" name="username" placeholder="username"  ngModel>
+  <br>
+ <b> Enter Your PassWord: </b>
+ <input style="text-align: center" type="password" name="password" placeholder="password"  ngModel>
+ <br>
+ <pre>
+                  <input type="submit" value="submit">   <input type="reset" value="reset">
+</pre>
+</form>
+</div>
+<router-outlet></router-outlet> 
+
